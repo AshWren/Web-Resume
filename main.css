@@ -1,0 +1,159 @@
+/* Index */
+
+
+
+.page-header .mainPhoto {
+    margin: 10px auto;
+    max-width: 400px;
+}
+
+
+/*  Timeline  */
+
+.timeline {
+    list-style: none;
+    padding: 20px 0 20px;
+    position: relative;
+}
+
+.timeline:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 2px;
+    background-color: gray;
+    left: 50%;
+    margin-left: -1.5px;
+}
+
+.timeline li {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.timeline li:before,
+.timeline li:after {/* why */
+    content: " ";
+    display: table;
+}
+
+.timeline li:after {
+    clear: both;
+}
+
+.timeline li .timelinePanel {
+    width: 46%;
+    float: left;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 20px;
+    position: relative;
+}
+
+.timeline li .timelinePanel:before {/* why */
+    position: absolute;
+    top: 26px;
+    right: -15px;
+    display: inline-block;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #ccc;
+    border-right: 0 solid #ccc;
+    border-bottom: 15px solid transparent;
+    content: " ";
+}
+
+.timeline li .timelinePanel:after {/* why */
+    position: absolute;
+    top: 27px;
+    right: -14px;
+    display: inline-block;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 14px solid transparent;
+    content: " ";
+}
+
+.timeline li .timelineBadge {
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;/* why */
+    font-size: 18px;
+    text-align: center;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    margin-left: -25px;
+    background-color: #999999;
+    z-index: 100;/* why */
+    border-radius: 50%;
+}
+
+.timeline li.timelineInverted .timelinePanel {
+    float: right;
+}
+
+.timeline li.timelineInverted 
+.timelinePanel:before {/* why */
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+}
+
+.timeline li.timelineInverted 
+.timelinePanel:after {/* why */
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+}
+
+.timelineTitle {
+    margin-top: 0;
+}
+
+.timelineBody p,
+.timelineBody ul {
+    margin-bottom: 0;
+}
+
+.timelineBody p {
+    margin-top: 5px;
+}
+
+@media (max-width: 767px) {
+    ul.timeline:before {
+        left: 40px;
+    }
+    ul.timeline li .timelinePanel { /* huh */
+        width: calc(100% - 90px);
+        width: -moz-calc(100% - 90px);
+        width: -webkit-calc(100% - 90px);
+    }
+    ul.timeline li .timelineBadge {
+        left: 15px;
+        margin-left: 0;
+        top: 16px;
+    }
+    ul.timeline li .timelinePanel {
+        float: right;
+    }
+    ul.timeline li .timelinePanel:before { /* why */
+        border-left-width: 0;
+        border-right-width: 15px;
+        left: -15px;
+        right: auto;
+    }
+    ul.timeline li .timelinePanel:after { /* why */
+        border-left-width: 0;
+        border-right-width: 14px;
+        left: -14px;
+        right: auto;
+    }
+}
+
+/*  Skills */
+
