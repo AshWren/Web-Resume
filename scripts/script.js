@@ -45,7 +45,8 @@ $(document).ready(function () {
         };
     };
 
-    $('#introBtn').on('click', function () {
+    $('#introBtn').on('click', function (e) {
+        e.preventDefault();
         if ($('#introBtn').hasClass("active")) {
             hideSection('introBtn');
         } else {
@@ -54,7 +55,8 @@ $(document).ready(function () {
         }
     });
 
-    $('#eduBtn').on('click', function () {
+    $('#eduBtn').on('click', function (e) {
+        e.preventDefault();
         if ($('#eduBtn').hasClass("active")) {
             hideSection('eduBtn');
         } else {
