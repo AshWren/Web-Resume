@@ -1,8 +1,8 @@
 $(document).ready(function () {
 
-    hideAll();
+    cleanUp();
 
-    function hideAll() {
+    function cleanUp() {
         $('#introduction').hide();
         console.log("hello");
         $('#education').hide();
@@ -17,6 +17,14 @@ $(document).ready(function () {
         $('#skillsBtn').removeClass('active');
         $('#portBtn').removeClass('active');
         $('#contBtn').removeClass('active');
+
+        $(".introBtn").html("Introduction");
+        $(".eduBtn").html("Education");
+        $(".empBtn").html("Employment");
+        $(".skillsBtn").html("Skills");
+        $(".portBtn").html("Porfolio");
+        $(".contBtn").html("Contact");
+
     };
 
     function showSection(idClicked) {
@@ -28,6 +36,22 @@ $(document).ready(function () {
             case "eduBtn":
                 $('#education').fadeIn();
                 $('#eduBtn').addClass("active");
+                break;
+            case "empBtn":
+                $('#employment').fadeIn();
+                $('#empBtn').addClass("active");
+                break;
+            case "skillsBtn":
+                $('#skills').fadeIn();
+                $('#skillsBtn').addClass("active");
+                break;
+            case "portBtn":
+                $('#portfolio').fadeIn();
+                $('#portBtn').addClass("active");
+                break;
+            case "contBtn":
+                $('#contact').fadeIn();
+                $('#contBtn').addClass("active");
                 break;
         };
     };
@@ -42,15 +66,33 @@ $(document).ready(function () {
                 $('#education').fadeOut();
                 $('#eduBtn').removeClass("active");
                 break;
+            case "empBtn":
+                $('#employment').fadeOut();
+                $('#empBtn').removeClass("active");
+                break;
+            case "skillsBtn":
+                $('#skills').fadeOut();
+                $('#skillsBtn').removeClass("active");
+                break;
+            case "portBtn":
+                $('#portfolio').fadeOut();
+                $('#portBtn').removeClass("active");
+                break;
+            case "contBtn":
+                $('#contact').fadeOut();
+                $('#contBtn').removeClass("active");
+                break;
         };
     };
 
     $('#introBtn').on('click', function (e) {
         e.preventDefault();
         if ($('#introBtn').hasClass("active")) {
+            $(".introBtn").html("Introduction");
             hideSection('introBtn');
         } else {
-            hideAll();
+            cleanUp();
+            $(".introBtn").html("{ Introduction }");
             showSection('introBtn');
         }
     });
@@ -58,28 +100,63 @@ $(document).ready(function () {
     $('#eduBtn').on('click', function (e) {
         e.preventDefault();
         if ($('#eduBtn').hasClass("active")) {
+            $(".eduBtn").html("Education");
             hideSection('eduBtn');
         } else {
-            hideAll();
+            cleanUp();
+            $(".eduBtn").html("{ Education }");
             showSection('eduBtn');
         }
     });
 
-    $('#empBtn').on('click', function () {
-        hideAll();
-        toggleSection('empBtn');
+    $('#empBtn').on('click', function (e) {
+        e.preventDefault();
+        if ($('#empBtn').hasClass("active")) {
+            $(".empBtn").html("Employment");
+            hideSection('empBtn');
+        } else {
+            cleanUp();
+            $(".empBtn").html("{ Employment }");
+            showSection('empBtn');
+        }
     });
-    $('#skillsBtn').on('click', function () {
-        hideAll();
-        toggleSection('skillsBtn');
+
+    $('#skillsBtn').on('click', function (e) {
+        e.preventDefault();
+        if ($('#skillsBtn').hasClass("active")) {
+            $(".skillsBtn").html("Skills");
+            hideSection('skillsBtn');
+        } else {
+            cleanUp();
+            $(".skillsBtn").html("{ Skills }");
+            showSection('skillsBtn');
+        }
     });
-    $('#portBtn').on('click', function () {
-        hideAll();
-        toggleSection('portBtn');
+
+    $('#portBtn').on('click', function (e) {
+        e.preventDefault();
+        if ($('#portBtn').hasClass("active")) {
+            $(".portBtn").html("Porfolio");
+            hideSection('portBtn');
+        } else {
+            cleanUp();
+            $(".portBtn").html("{ Porfolio }");
+            showSection('portBtn');
+        }
     });
-    $('#contBtn').on('click', function () {
-        hideAll();
-        toggleSection('contBtn');
+
+    $('#contBtn').on('click', function (e) {
+        e.preventDefault();
+        if ($('#contBtn').hasClass("active")) {
+            $(".contBtn").html("Contact");
+            hideSection('contBtn');
+        } else {
+            cleanUp();
+            $(".contBtn").html("{ Contact }");
+            showSection('contBtn');
+        }
     });
+
+
 
 });
