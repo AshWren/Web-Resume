@@ -9,14 +9,11 @@
     <link href="https://fonts.googleapis.com/css?family=Cinzel|Cinzel+Decorative:400|Cormorant+Infant|Raleway" rel="stylesheet">
     <script src="https://use.fontawesome.com/0908bc8b51.js"></script>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
         crossorigin="anonymous">
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-            crossorigin="anonymous">
-            <!-- Latest compiled and minified JavaScript -->
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-                crossorigin="anonymous"></script>
+        <!-- Latest compiled and minified JavaScript -->
 </head>
 
 <body>
@@ -27,8 +24,8 @@
                     <div class="main">
                         <div class="page-header">
                             <div class="row">
-                                <img class="mainPhoto img-responsive center-block col-sm-6" src="./images/profile pic - me2 - cropped.jpg" />
-                                <section class="col-sm-6 center-block text-center">
+                                <img class="mainPhoto img-responsive center-block col-sm-12 col-md-6" src="./images/profile pic - me2 - cropped.jpg" />
+                                <section class="col-sm-12 col-md-6 text-center">
                                     <h1>Rachel Stuckey</h1>
                                     <h2>Web Design and Development</h2>
                                     <p>
@@ -42,7 +39,7 @@
                                         and hot new trends in web development.
                                     </p>
                                 </section>
-                            </div> 
+                            </div>
                             <nav class="navbar navbar-default">
                                 <div class="container-fluid">
                                     <!-- Brand and toggle get grouped for better mobile display -->
@@ -67,48 +64,55 @@
                                         </ul>
                                     </div>
                                     <!-- /.navbar-collapse -->
-                                </div>
+                                </div> <!--container-fluid-->
                             </nav>
                         </div>
+                        <!--page-header-->
                     </div>
+                    <!-- main -->
                 </div>
+                <!-- col-sm-12 -->
                 <div id="introduction">
                     <div class="col-sm-12">
                         <div class="row">
                             <div class="col-sm-12 text-center">
                                 <h1>Introduction</h1>
-                                <p>[Insert witty (or even halfway decent) paragraph here]
+                                <p>[Insert witty paragraph here]
                                 </p>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-sm-6 col-md-2 text-center">
+                            <div class="col-sm-4 col-md-2 text-center hobby-item">
                                 <h3>Knitting</h3>
-                                <i class="fa fa-superpowers" aria-hidden="true"></i>
+                                <i class="fa fa-ravelry" aria-hidden="true"></i>
                             </div>
-                            <div class="col-sm-6 col-md-2 text-center">
+                            <div class="col-sm-4 col-md-2 text-center hobby-item">
                                 <h3>Gaming</h3>
-                                <i class="ion-ios-game-controller-b-outline" aria-hidden="true"></i>
+                                <i class="ion-ios-game-controller-b-outline hobby-item-i" aria-hidden="true"></i>
                             </div>
-                            <div class="col-sm-6 col-md-2 text-center">
+                            <div class="col-sm-4 col-md-2 text-center hobby-item">
                                 <h3>Sewing</h3>
                                 <i class="fa fa-scissors" aria-hidden="true"></i>
                             </div>
-                            <div class="col-sm-6 col-md-2 text-center">
+                            
+                            <div class="col-sm-4 col-md-2 text-center hobby-item">
                                 <h3>Art</h3>
-                                <i class="ion-android-color-palette" aria-hidden="true"></i>
+                                <i class="ion-android-color-palette hobby-item-i" aria-hidden="true"></i>
                             </div>
-                            <div class="col-sm-6 col-md-2 text-center">
-                                <h3>Travel</h3>
+                            <div class="col-sm-4 col-md-2 text-center hobby-item">
+                                <h3>Travel</h3> 
                                 <i class="fa fa-globe" aria-hidden="true"></i>
                             </div>
-                            <div class="col-sm-6 col-md-2 text-center">
+                            <div class="col-sm-4 col-md-2 text-center hobby-item">
                                 <h3>Animals</h3>
-                                <i class="ion-ios-paw-outline" aria-hidden="true"></i>
+                                <i class="ion-ios-paw-outline hobby-item-i" aria-hidden="true"></i>
                             </div>
                         </div>
+                        <!--row-->
                     </div>
+                    <!-- col-sm-12 -->
                 </div>
+                <!-- introduction -->
                 <!--- end introduction -->
                 <div id="education">
                     <div class="col-sm-12">
@@ -120,48 +124,51 @@
                         <div class="row">
                             <ul class="timeline">
                                 <li>
-                                    <div class="timelineBadge"><i class="fa fa-university" aria-hidden="true"></i></div>
-                                    <div class="timelinePanel">
+                                    <div class="timelineBadge"><i class="fa fa-graduation-cap" aria-hidden="true"></i></div>
+                                    <div class="timelinePanel text-center">
                                         <div class="timelineHeading">
                                             <h2 class="timelineTitle">University of Arkansas</h2>
-                                            <h3>10/2016 - Present</h3>
+                                            <h4>~ 10/2016 - Present ~</h4>
                                         </div>
                                         <div class="timelineBody">
-                                            <p>Front End Development</p>
+                                            <h5>Front End Development</h5>
                                             <p>IT Readiness Program</p>
                                         </div>
                                     </div>
                                 </li>
                                 <li class=" timelineInverted">
-                                    <div class="timelineBadge"><i class="fa fa-university" aria-hidden="true"></i></div>
-                                    <div class="timelinePanel">
+                                    <div class="timelineBadge"><i class="fa fa-graduation-cap" aria-hidden="true"></i></div>
+                                    <div class="timelinePanel text-center">
                                         <div class="timelineHeading">
                                             <h2 class="timelineTitle">Mississippi State College of Veterinary Medicine</h2>
-                                            <h3>08/2012 - 01/2016</h3>
+                                            <h4>~ 08/2012 - 01/2016 ~</h4>
                                         </div>
                                         <div class="timelineBody">
-                                            <p>Veterinary Medicine</p>
+                                            <h5>Veterinary Medicine</h5>
                                             <p>Withdrew in Good Standing</p>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="timelineBadge"><i class="fa fa-university" aria-hidden="true"></i></div>
-                                    <div class="timelinePanel">
+                                    <div class="timelineBadge"><i class="fa fa-graduation-cap" aria-hidden="true"></i></div>
+                                    <div class="timelinePanel text-center">
                                         <div class="timelineHeading">
                                             <h2 class="timelineTitle">Millsaps College</h2>
-                                            <h3>08/2008 - 05/2012</h3>
+                                            <h4>~ 08/2008 - 05/2012 ~</h4>
                                         </div>
                                         <div class="timelineBody">
-                                            <p>Bachelors of Science in Biology</p>
+                                            <h5>Bachelors of Science in Biology</h5>
                                             <p>Minor in Chemistry</p>
                                         </div>
                                     </div>
                                 </li>
                             </ul>
                         </div>
+                        <!-- row -->
                     </div>
+                    <!--col-sm-12-->
                 </div>
+                <!-- education -->
                 <!-- end of Education -->
                 <div id="employment">
                     <div class="col-sm-12">
@@ -173,85 +180,101 @@
                         <div class="row">
                             <ul class="timeline">
                                 <li>
-                                    <div class="timelineBadge"><i class="fa fa-university" aria-hidden="true"></i></div>
-                                    <div class="timelinePanel">
+                                    <div class="timelineBadge"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+                                    <div class="timelinePanel text-center">
                                         <div class="timelineHeading">
                                             <h2 class="timelineTitle">Vulcan Jew Designs</h2>
                                             <h3>Owner</h3>
-                                            <h4>12-2016 - Present</h4>
+                                            <h4>~ 12-2016 - Present ~</h4>
                                         </div>
                                         <div class="timelineBody">
-                                            <p>Item 1</p>
-                                            <p>Item 2</p>
-                                            <p>Item 3</p>
+                                            <p><i class="fa fa-angle-right" aria-hidden="true"></i>Item 1</p>
+                                            <p><i class="fa fa-angle-right" aria-hidden="true"></i>Item 2</p>
+                                            <p><i class="fa fa-angle-right" aria-hidden="true"></i>Item 3</p>
                                         </div>
                                     </div>
                                 </li>
                                 <li class=" timelineInverted">
-                                    <div class="timelineBadge"><i class="fa fa-university" aria-hidden="true"></i></div>
-                                    <div class="timelinePanel">
+                                    <div class="timelineBadge"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+                                    <div class="timelinePanel text-center">
                                         <div class="timelineHeading">
                                             <h2 class="timelineTitle">Walmart Temp</h2>
-                                            <h3>via Staffmark</h3>
+                                            <h3>(via Staffmark)</h3>
                                             <h3>Specialist IV</h3>
-                                            <h4>09/2016 - Present</h4>
+                                            <h4>~ 09/2016 - Present ~</h4>
                                         </div>
                                         <div class="timelineBody">
-                                            <p>Review bank statements to ensure correct placement of transactions.</p>
-                                            <p>Update account information for stores switching to cash recycler system.</p>
-                                            <p>Utilize Microsoft Office, ReconNet, SAP, and HOST/QMF in daily activities.</p>
+                                            <p><i class="fa fa-angle-right" aria-hidden="true"></i>Review bank statements to
+                                                ensure correct placement of transactions.</p>
+                                            <p><i class="fa fa-angle-right" aria-hidden="true"></i>Update account information
+                                                for stores switching to cash recycler system.</p>
+                                            <p><i class="fa fa-angle-right" aria-hidden="true"></i>Utilize Microsoft Office,
+                                                ReconNet, SAP, and HOST/QMF in daily activities.</p>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="timelineBadge"><i class="fa fa-university" aria-hidden="true"></i></div>
-                                    <div class="timelinePanel">
+                                    <div class="timelineBadge"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+                                    <div class="timelinePanel text-center">
                                         <div class="timelineHeading">
                                             <h2 class="timelineTitle">Banfield Pet Hospital</h2>
                                             <h3>Veterinary Assistant</h3>
-                                            <h4>06/2014 - 07/2014</h4>
+                                            <h4>~ 06/2014 - 07/2014 ~</h4>
                                         </div>
                                         <div class="timelineBody">
-                                            <p>Ran blood work, urinalysis, and fecals for canine and feline patients.</p>
-                                            <p>Administered shots, performed dentals, restrained patients for care.</p>
-                                            <p>General assistance to the veterinarians and veterinary technicians.</p>
+                                            <p><i class="fa fa-angle-right" aria-hidden="true"></i>Ran blood work, urinalysis,
+                                                and fecals for canine and feline patients.</p>
+                                            <p><i class="fa fa-angle-right" aria-hidden="true"></i>Administered shots, performed
+                                                dentals, restrained patients for care.</p>
+                                            <p><i class="fa fa-angle-right" aria-hidden="true"></i>General assistance to the
+                                                veterinarians and veterinary technicians.</p>
                                         </div>
                                     </div>
                                 </li>
                                 <li class=" timelineInverted">
-                                    <div class="timelineBadge"><i class="fa fa-university" aria-hidden="true"></i></div>
-                                    <div class="timelinePanel">
+                                    <div class="timelineBadge"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+                                    <div class="timelinePanel text-center">
                                         <div class="timelineHeading">
                                             <h2 class="timelineTitle">Millsaps College Yucatan Reserve</h2>
                                             <h3>Field Ornithology Assistant</h3>
-                                            <h4>05/2010 - 07/2010</h4>
+                                            <h4>~ 05/2010 - 07/2010 ~</h4>
                                         </div>
                                         <div class="timelineBody">
-                                            <p>Assisted in the capture and data collection of birds.</p>
-                                            <pAssisted the professor in the study abroad class.</p>
-                                                <p>Collected and recorded data on dangerous plant species found on the reserve.</p>
+                                            <p><i class="fa fa-angle-right" aria-hidden="true"></i>Assisted in the capture and
+                                                data collection of birds.</p>
+                                            <p><i class="fa fa-angle-right" aria-hidden="true"></i>Assisted the professor in
+                                                the study abroad class.</p>
+                                            <p><i class="fa fa-angle-right" aria-hidden="true"></i>Collected and recorded data
+                                                on dangerous plant species found on the reserve.</p>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="timelineBadge"><i class="fa fa-university" aria-hidden="true"></i></div>
-                                    <div class="timelinePanel">
+                                    <div class="timelineBadge"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+                                    <div class="timelinePanel text-center">
                                         <div class="timelineHeading">
                                             <h2 class="timelineTitle">Bridgwater College</h2>
                                             <h3>Animal Care Intern</h3>
-                                            <h4>05/2009 - 07/2009</h4>
+                                            <h4>~ 05/2009 - 07/2009 ~</h4>
                                         </div>
                                         <div class="timelineBody">
-                                            <p>Cared for over 100 exotic animal species</p>
-                                            <p>Cleaned cages, fed, and administered medication</p>
-                                            <p>Assisted the Grooming Specialist once a week.</p>
+                                            <p><i class="fa fa-angle-right" aria-hidden="true"></i>Cared for over 100 exotic
+                                                animal species</p>
+                                            <p><i class="fa fa-angle-right" aria-hidden="true"></i>Cleaned cages, fed, and administered
+                                                medication
+                                            </p>
+                                            <p><i class="fa fa-angle-right" aria-hidden="true"></i>Assisted the Grooming Specialist
+                                                once a week.</p>
                                         </div>
                                     </div>
                                 </li>
                             </ul>
                         </div>
+                        <!-- row -->
                     </div>
+                    <!-- col-sm-12 -->
                 </div>
+                <!-- employment -->
                 <!-- end of Employment -->
                 <div id="skills">
                     <div class="col-sm-12">
@@ -357,135 +380,145 @@
                             </div>
                         </div>
                         <!--  Personal Skills 
-            <div class="row">
-                <div class="col-sm-12">
-                    <h4>Teamwork</h4>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
-                            90%
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <h4>Creativity</h4>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">
-                            95%
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <h4>Communication</h4>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
-                            90%
-                        </div>
-                    </div>
-                </div>
-            </div>
-                                
-            <div class="row">
-                <div class="col-sm-12">
-                    <h4>Dedication</h4>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
-                            90%
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <h4></h4>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
-                            90%
-                        </div>
-                    </div>
-                </div>
-            </div>
-  -->
-                    </div>
-                </div>
-            </div>
-            <!-- end of Skills -->
-            <div id="portfolio">
-                <div class="col-sm-12">
-                    <div class="row">
-                        <div class="col-sm-12 text-center">
-                            <h1>Porfolio</h1>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-12 text-center">
-                            <h3>Coming Soon!</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- end of Portfolio -->
-            <div id="contact">
-                <div class="col-sm-12">
-                    <div class="row">
-                        <div class="col-sm-12 text-center">
-                            <h1>Contact</h1>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-12 text-center">
-                            <div id="wufoo-zonmm1k0ekg7th">
-                                Fill out my <a href="https://stuckrk.wufoo.com/forms/zonmm1k0ekg7th">online form</a>.
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h4>Teamwork</h4>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">
+                                        95%
+                                    </div>
+                                </div>
                             </div>
-                            <div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">HTML Forms powered by <a href="http://www.wufoo.com">Wufoo</a>.</div>
-                            <script type="text/javascript">
-                                var zonmm1k0ekg7th;
-                                (function (d, t) {
-                                    var s = d.createElement(t),
-                                        options = {
-                                            'userName': 'stuckrk',
-                                            'formHash': 'zonmm1k0ekg7th',
-                                            'autoResize': true,
-                                            'height': '600',
-                                            'async': true,
-                                            'host': 'wufoo.com',
-                                            'header': 'show',
-                                            'ssl': true
-                                        };
-                                    s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') +
-                                        'www.wufoo.com/scripts/embed/form.js';
-                                    s.onload = s.onreadystatechange = function () {
-                                        var rs = this.readyState;
-                                        if (rs)
-                                            if (rs != 'complete')
-                                                if (rs != 'loaded') return;
-                                        try {
-                                            zonmm1k0ekg7th = new WufooForm();
-                                            zonmm1k0ekg7th.initialize(options);
-                                            zonmm1k0ekg7th.display();
-                                        } catch (e) {}
-                                    };
-                                    var scr = d.getElementsByTagName(t)[0],
-                                        par = scr.parentNode;
-                                    par.insertBefore(s, scr);
-                                })(document, 'script');
-                            </script>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h4>Creativity</h4>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">
+                                        95%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h4>Communication</h4>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">
+                                        95%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h4>Dedication</h4>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                                        1000%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h4></h4>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+                                        90%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        -->
+                    </div>
+                    <!-- col-sm-12 -->
+                </div>
+                <!-- skills -->
+                <!-- end of Skills -->
+                <div id="portfolio">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-12 text-center">
+                                <h1>Porfolio</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 text-center">
+                                <h3>Coming Soon!</h3>
+                            </div>
                         </div>
                     </div>
+                    <!-- col-sm-12 -->
                 </div>
+                <!-- porfolio -->
+                <!-- end of Portfolio -->
+                <div id="contact">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-12 text-center">
+                                <h1>Contact</h1>
+                            </div>
+                        </div>
+                        <div class="row contactform">
+                            <div class="col-sm-12 text-center">
+                                <div id="wufoo-zonmm1k0ekg7th">
+                                    Fill out my <a href="https://stuckrk.wufoo.com/forms/zonmm1k0ekg7th">online form</a>.
+                                </div>
+                                <div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">There are tons of <a href="http://www.wufoo.com/features/">Wufoo features</a> to help make
+                                    your forms awesome.</div>
+                                <script type="text/javascript">
+                                    var zonmm1k0ekg7th;
+                                    (function (d, t) {
+                                        var s = d.createElement(t),
+                                            options = {
+                                                'userName': 'stuckrk',
+                                                'formHash': 'zonmm1k0ekg7th',
+                                                'autoResize': true,
+                                                'height': '597',
+                                                'async': true,
+                                                'host': 'wufoo.com',
+                                                'header': 'show',
+                                                'ssl': true
+                                            };
+                                        s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') +
+                                            'www.wufoo.com/scripts/embed/form.js';
+                                        s.onload = s.onreadystatechange = function () {
+                                            var rs = this.readyState;
+                                            if (rs)
+                                                if (rs != 'complete')
+                                                    if (rs != 'loaded') return;
+                                            try {
+                                                zonmm1k0ekg7th = new WufooForm();
+                                                zonmm1k0ekg7th.initialize(options);
+                                                zonmm1k0ekg7th.display();
+                                            } catch (e) {}
+                                        };
+                                        var scr = d.getElementsByTagName(t)[0],
+                                            par = scr.parentNode;
+                                        par.insertBefore(s, scr);
+                                    })(document, 'script');
+                                </script>
+                            </div>
+                        </div>
+                        <!-- contactform -->
+                    </div>
+                    <!-- col-sm-12 -->
+                </div>
+                <!-- contact -->
+                <!-- end of Contact -->
             </div>
+            <!-- row -->
         </div>
-    </div>
-    
-    <!-- end of Contact -->
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="scripts/bootstrap.min.js"></script>
-    <script src="scripts/script.js"></script>
+        <!--content-->
+    </div> <!-- container -->
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+            <!-- Include all compiled plugins (below), or include individual files as needed -->
+            <script src="./bootstrap/js/bootstrap.js"></script>
+            <script src="scripts/script.js"></script>
 </body>
 
 </html>

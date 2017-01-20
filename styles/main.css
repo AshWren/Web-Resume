@@ -1,4 +1,4 @@
-/* Index */
+/* ------------ Index ------------ */
 
 .content {
     background-color: #dae9f2;
@@ -28,29 +28,29 @@
     border: none;
 }
 
+.main .page-header {
+    border:none;
+}
+
 .page-header .mainPhoto {
     margin: 20px auto;
     max-width: 75%;
 }
 
-
-/* Trying to do Flexbox to make things center on y-axis... failing.... 
-.page-header section {
+.page-header .row {
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
 
-.page-header h1, .page-header h2, .page-header p {
-    margin: auto;
-} 
-*/
-
-
-/* Navbar */
-
-.nav-bar .active {
-    color: #009bf2;
+@media screen and (min-width: 992px) {
+    .page-header .row {
+        flex-direction: row;
+    }
 }
+
+
+/* ------------ Navbar ------------ */
 
 .navbar .navbar-nav {
     display: inline-block;
@@ -63,24 +63,38 @@
 }
 
 
-/* Introduction */
+/* ------------ Introduction ------------ */
 
 #introduction h1 {
     margin-bottom: 15px;
 }
 
-#introduction i {
-    font-size: 40px;
-    padding: 5px;
+.hobby-item {
+    height: 100px;
+}
+
+.hobby-item i {
+    font-size: 35px;
+   
+}
+
+hobby-item-i {
+    height: 35px;
 }
 
 
-/*  Timeline  */
+
+/* ------------ Timeline ------------ */
 
 .timeline {
     list-style: none;
     padding: 20px 0 20px;
     position: relative;
+}
+
+.timeline h3,
+.timeline h4 {
+    border: none;
 }
 
 .timeline:before {
@@ -89,7 +103,7 @@
     position: absolute;
     content: " ";
     width: 2px;
-    background-color: gray;
+    background-color: #ccc;
     left: 50%;
     margin-left: -1.5px;
 }
@@ -101,7 +115,6 @@
 
 .timeline li:before,
 .timeline li:after {
-    /* why */
     content: " ";
     display: table;
 }
@@ -113,53 +126,49 @@
 .timeline li .timelinePanel {
     width: 46%;
     float: left;
-    border: 1px solid black;
+    background-color: #FBFBFB;
+    border: 1px solid #ccc;
     border-radius: 2px;
     padding: 20px;
     position: relative;
 }
 
 .timeline li .timelinePanel:before {
-    /* why */
     position: absolute;
     top: 26px;
     right: -15px;
     display: inline-block;
     border-top: 15px solid transparent;
-    border-left: 15px solid #ccc;
+    border-left: 15px solid #FBFBFB;
     border-right: 0 solid #ccc;
     border-bottom: 15px solid transparent;
     content: " ";
 }
 
 .timeline li .timelinePanel:after {
-    /* why */
     position: absolute;
     top: 27px;
     right: -14px;
     display: inline-block;
     border-top: 14px solid transparent;
-    border-left: 14px solid #fff;
-    border-right: 0 solid #fff;
+    border-left: 14px solid #FBFBFB;
+    border-right: 0 solid #fbfbfb;
     border-bottom: 14px solid transparent;
     content: " ";
 }
 
 .timeline li .timelineBadge {
-    color: #fff;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    /* why */
-    font-size: 18px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
     text-align: center;
     position: absolute;
-    top: 16px;
+    top: 24px;
     left: 50%;
-    margin-left: -25px;
-    background-color: #999999;
+    margin-left: -18px;
+    background-color: #FBFBFB;
     z-index: 100;
-    /* why */
     border-radius: 50%;
 }
 
@@ -168,7 +177,6 @@
 }
 
 .timeline li.timelineInverted .timelinePanel:before {
-    /* why */
     border-left-width: 0;
     border-right-width: 15px;
     left: -15px;
@@ -176,7 +184,6 @@
 }
 
 .timeline li.timelineInverted .timelinePanel:after {
-    /* why */
     border-left-width: 0;
     border-right-width: 14px;
     left: -14px;
@@ -201,7 +208,6 @@
         left: 40px;
     }
     ul.timeline li .timelinePanel {
-        /* huh */
         width: calc(100% - 90px);
         width: -moz-calc(100% - 90px);
         width: -webkit-calc(100% - 90px);
@@ -215,14 +221,12 @@
         float: right;
     }
     ul.timeline li .timelinePanel:before {
-        /* why */
         border-left-width: 0;
         border-right-width: 15px;
         left: -15px;
         right: auto;
     }
     ul.timeline li .timelinePanel:after {
-        /* why */
         border-left-width: 0;
         border-right-width: 14px;
         left: -14px;
@@ -230,8 +234,15 @@
     }
 }
 
+/* ------------ Education ------------ */
 
-/*  Skills */
+
+
+/* ------------ Employment ------------ */
+
+
+
+/* ------------ Skills ------------ */
 
 #skills h4 {
     border: none;
@@ -240,3 +251,12 @@
 #skills .progress-bar {
     color: black;
 }
+
+/* ------------ Portfolio ------------ */
+
+#portfolio h3 {
+    border: none;
+    padding: 15px;
+}
+
+/* ------------ Contact ------------ */
