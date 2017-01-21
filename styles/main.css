@@ -83,7 +83,6 @@ hobby-item-i {
 }
 
 
-
 /* ------------ Timeline ------------ */
 
 .timeline {
@@ -203,7 +202,7 @@ hobby-item-i {
     margin-top: 5px;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
     ul.timeline:before {
         left: 40px;
     }
@@ -260,3 +259,7 @@ hobby-item-i {
 }
 
 /* ------------ Contact ------------ */
+
+#container header h2 {
+    border-bottom: none;
+}
