@@ -29,13 +29,16 @@
 }
 
 .main .page-header {
-    border:none;
+    border: none;
 }
 
-.page-header .mainPhoto {
+.page-header .mainPhoto{
     margin: 20px auto;
-    max-width: 75%;
+    padding: 0px;
+    max-width: 450px;
+    border: 10px double #224568;
 }
+
 
 .page-header .row {
     display: flex;
@@ -75,14 +78,19 @@
 
 .hobby-item i {
     font-size: 35px;
-   
 }
 
 hobby-item-i {
     height: 35px;
 }
 
+strong {
+    font-weight: bold;
+}
 
+.slideDown {
+    padding: 10px;
+}
 /* ------------ Timeline ------------ */
 
 .timeline {
@@ -233,12 +241,11 @@ hobby-item-i {
     }
 }
 
+
 /* ------------ Education ------------ */
 
 
-
 /* ------------ Employment ------------ */
-
 
 
 /* ------------ Skills ------------ */
@@ -251,12 +258,14 @@ hobby-item-i {
     color: black;
 }
 
+
 /* ------------ Portfolio ------------ */
 
 #portfolio h3 {
     border: none;
     padding: 15px;
 }
+
 
 /* ------------ Contact ------------ */
 

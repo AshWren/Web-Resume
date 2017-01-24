@@ -1,10 +1,12 @@
 $(document).ready(function () {
+    console.log("Hey! I noticed you were looking at my page. You should send me a message! Have a great day!")
 
     cleanUp();
 
+    $(".slideDown").hide();
+
     function cleanUp() {
         $('#introduction').hide();
-        console.log("hello");
         $('#education').hide();
         $('#employment').hide();
         $('#skills').hide();
@@ -157,6 +159,35 @@ $(document).ready(function () {
         }
     });
 
+    /*  ----- Hobbies ----- */
+
+    $('#knitBtn').on('click', function () {
+        $(this).find(".slideDown").slideToggle();
+    });
+
+    $('#gameBtn').on('click', function () {
+        $(this).find(".slideDown").slideToggle();
+    });
+
+    $('#sewBtn').on('click', function () {
+        $(this).find(".slideDown").slideToggle();
+    });
+
+    $('#artBtn').on('click', function () {
+        $(this).find(".slideDown").slideToggle();
+    });
+
+    $('#travelBtn').on('click', function () {
+        $(this).find(".slideDown").slideToggle();
+    });
+
+    $('#animalBtn').on('click', function () {
+        $(this).find(".slideDown").slideToggle();
+    });
+
+    $('#filmBtn').on('click', function () {
+        $(this).find(".slideDown").slideToggle();
+    });
 
 
 });
