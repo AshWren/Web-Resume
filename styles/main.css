@@ -91,6 +91,17 @@ strong {
 .slideDown {
     padding: 10px;
 }
+
+.hobbyHolder {
+    
+    display: table; 
+    width: 100%
+}
+
+.hobbyHolder:after {
+    clear: both;
+    content: ' ';
+}
 /* ------------ Timeline ------------ */
 
 .timeline {
